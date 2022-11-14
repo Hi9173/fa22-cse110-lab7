@@ -49,7 +49,8 @@ self.addEventListener('fetch', function (event) {
     return cache.match(event.request).then((cachedResponse) => {
       return cachedResponse || fetch(event.request).then((fetchedResponse) => {
         cache.put(event.request, fetchedResponse.clone());
-      })
-    })
-  }))
+        return fetchedResponse;
+      });
+    });
+  }));
 });
