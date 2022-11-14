@@ -1,1 +1,1 @@
-https://github.com/Hi9173/fa22-cse110-lab7
+https://hi9173.github.io/fa22-cse110-lab7/
